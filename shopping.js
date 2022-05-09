@@ -7,14 +7,19 @@ console.log("local storage works")
 
 }else{
     return false
-    
+    }
 }
 
-}
 function saveItem(){
+   
     let name=document.getElementById("name").value;
     let data=document.getElementById("data").value;
-    localStorage.setItem(name, data);
+    if(name==""||data=="")
+    {alert("Please fill out the box.")}
+    else{
+        localStorage.setItem(name, data);
+    }
+    
     showAll();
 }
 function removeItem(){
@@ -44,5 +49,8 @@ function showAll(){
             list+="<tr><td>"+key+"</td><td>"+localStorage.getItem(key)+"</td></tr>"
         }
         document.getElementById("list").innerHTML="<tr><th>Item</th><th>Quality</th></tr>"+list
+    }
+    else{
+      alert("Can't store shopping list.Your browser doesn't support local storage.")
     }
 }
