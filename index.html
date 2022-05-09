@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list</title>
+    <script src="shopping.js" ></script>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body onload="showAll()">
+  <h1>Enter Items And Quantity</h1>  
+  <form name="shoppingList">
+  <div id="shopping">
+      <table>
+       <tr>
+         <td>Item <input type="text" name="name" id="name"></td>  
+         <td>Quantity <input type="text" name="data" id="data"></td>
+        </tr>
+       <tr>
+         <td> 
+           <input type="button" value="Save" onclick="saveItem()">
+           <input type="button" value="Remove" onclick="removeItem()">
+           <input type="button" value="Clear" onclick="clearItem()">
+          </td>
+       </tr>
+      </table>
+  </div>   
+
+  <div id="items_table">
+      <h1>Shopping List</h1>
+      <table id="list"></table>
+      <p>
+           <input type="button" value="Clear" onclick="clearAll()">
+           <label name="Clear">Remove all items</label>
+
+      </p>
+
+  </div> 
+  </form>
+</body>
+</html>

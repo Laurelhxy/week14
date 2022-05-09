@@ -1,0 +1,46 @@
+h1{
+ font-size: large; 
+ font-family: sans-serif;  
+}
+td,th{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 9px;
+    text-align: center;
+}
+label{
+    vertical-align: auto;
+}
+input{
+    width:auto;
+    margin-left:8px;
+    border-radius: 10%;
+    border:1px solid rgb(8, 6, 6);
+    padding:8px;
+
+}
+#shopping{
+    border: 1px dotted green;
+    background-color: rgb(241, 205, 205);
+}
+
+#items_table{
+    border:1px dotted rgb(10, 146, 10);
+    padding:6px;
+    margin-top:12px;
+    width:100%;
+}
+
+#items_table h1{
+    font-size: large; 
+    margin-top: 0px;
+    font-family: sans-serif;  
+   }
+ 
+ 
+
+ #list,#list td,#list th{
+    border:1px solid rgb(7, 12, 7);
+    background-color:antiquewhite; 
+    border-collapse: collapse;
+    width:auto;
+ }
